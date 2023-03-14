@@ -4,7 +4,7 @@ const express = require('express');
 // Criando a aplicação do Express
 const app = express();
 
-// Configurando as rotas
+// Configurando as rotas 
 app.get('/', (req, res) => {
     res.send('Olá, mundo!');
 });
