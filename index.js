@@ -9,6 +9,13 @@ app.get('/', (req, res) => {
     res.send('Olá, mundo!');
 });
 
+// Configurando as rotas 
+app.get('/objeto', (req, res) => {
+    res.send({
+        Text: "Ola"
+    });
+});
+
 // Rota que recebe parâmetros e os exibe na tela
 app.get('/parametros/:nome/:sobrenome', (req, res) => {
     const { nome, sobrenome } = req.params;
