@@ -4,7 +4,7 @@ const cors = require('cors'); // Importe o pacote cors
 
 // Criando a aplicação do Express
 const app = express();
-
+app.use(cors()); // Use o cors
 
 // Configurando as rotas 
 app.get('/', (req, res) => {
